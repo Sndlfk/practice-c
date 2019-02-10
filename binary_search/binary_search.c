@@ -7,14 +7,10 @@ int binarySearch(int keySearch, int arr[], int size) {
 		mid = (first + last) / 2;
 		if (arr[mid] == keySearch)
 			return mid;
-		else {
-			if (keySearch > arr[mid]) {
-				first = mid + 1;
-			} else if(keySearch < arr[mid]){
-				last = mid - 1;
-			}
-		}
+		else if (keySearch > arr[mid])
+			first = mid + 1;
+		else(keySearch < arr[mid])
+			last = mid - 1;
 	}
-
 	return -1;
 }		
