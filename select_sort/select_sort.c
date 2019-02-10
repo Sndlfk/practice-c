@@ -5,11 +5,10 @@ void swap(int *one, int *two) {
 }
 
 void selectSort(int arr[], int size) {
-	for (int i = 0; i < size - 1; i++) {
-		for (int b = i + 1; b < size; b++) {
-			if (arr[b] < arr[i]) {
-				swap(&arr[i], &arr[b]);
-			}
+	for (int out = 0; i < size - 1; out++) {
+		for (int in = out + 1; b < size; in++) {
+			if (arr[in] < arr[out])
+				swap(&arr[out], &arr[in]);
 		}
 	}
 }
