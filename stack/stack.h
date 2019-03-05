@@ -1,10 +1,6 @@
 #ifndef PROJECT_STACK_H
 #define PROJECT_STACK_H
-
 #include <stdbool.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
 typedef struct StackC {
 	int top;
